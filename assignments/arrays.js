@@ -2,6 +2,8 @@
 
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
+//Note: Take all (//) in the console.log to make it show.
+
 let inventory = [
   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
@@ -75,12 +77,12 @@ let inventory = [
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below
-console.log('Car 33 is a ' + inventory[32].car_year + ' ' + inventory[32].car_make + ' ' + inventory[32].car_model + '.');
+//console.log('Car 33 is a ' + inventory[32].car_year + ' ' + inventory[32].car_make + ' ' + inventory[32].car_model + '.');
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory[inventory.length-1];
-console.log('The last car in our inventory is a ' + lastCar.car_make, lastCar.car_model); // Made it into a sentence to make it easier to understand when reading it. 
+//console.log('The last car in our inventory is a ' + lastCar.car_make, lastCar.car_model); // Made it into a sentence to make it easier to understand when reading it. 
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
@@ -90,7 +92,7 @@ for (let i = 0; i < inventory.length; i++){
   carModels.push(inventory[i].car_model);
 }
 let carModelsSorted = carModels.sort()
-console.log(carModelsSorted.join(', ')); // I can use ('\n') to create a column instead of a row display(console). 
+//console.log(carModelsSorted.join(', ')); // I can use ('\n') to create a column instead of a row display(console). 
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
@@ -99,7 +101,7 @@ let carYears = [];
 for (let i = 0; i < inventory.length; i++) {
   carYears.push(inventory[i].car_year);
 }
-console.log(carYears.join(', '));  //I can also use ('\n') if I want to list them by a column. You can also just do console.log(carYears);
+//console.log(carYears.join(', '));  //I can also use ('\n') if I want to list them by a column. You can also just do console.log(carYears);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
@@ -110,7 +112,7 @@ for(let i = 0; i < carYears.length; i++){
     oldCars.push(carYears[i]);
   }
 }
-console.log('There are ' + oldCars.length + ' vehicles older than the year 2000.'); // Made it to a sentence to display it better. 
+//console.log('There are ' + oldCars.length + ' vehicles older than the year 2000.'); // Made it to a sentence to display it better. 
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
@@ -121,7 +123,7 @@ for(let i= 0; i < inventory.length; i++){
     BMWAndAudi.push(inventory[i]);
   }
 }
-console.log('BMW and Audi cars include: ' + JSON.stringify(BMWAndAudi)); // Made this into a sentence to give it more meaning.
+//console.log('BMW and Audi cars include: ' + JSON.stringify(BMWAndAudi)); // Made this into a sentence to give it more meaning.
 
 
-//Note to self: In this project I was using .push and for to solve all the challenges. 
+//Note: Take all (//) in the console.log to make it show. 
